@@ -1,0 +1,19 @@
+:root {
+  --black: #111;
+  --primary: #213455;
+
+  --thin-line: rgba(0, 0, 0, 0.1);
+
+  --whiteTrans: rgba(255, 255, 255, 0.5);
+
+  --trans: 150ms ease-in;
+
+  --offset: 10rem;
+  --out-offset: calc(var(--offset) * 2);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --offset: 6rem;
+  }
+}

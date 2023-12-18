@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-margin-top: 30px;
+}
+
+html {
+  font-size: 10px;
+  min-width: 370px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media (max-width: 960px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 541px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+ul,
+button {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

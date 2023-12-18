@@ -1,0 +1,130 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr min(calc(100% - 5rem), 1440px) 1fr;
+  column-gap: 2.5rem;
+}
+
+.container > * {
+  grid-column: 2;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.button {
+  position: relative;
+  border: none;
+  border: 1px solid white;
+  padding: 0.6em 1.5em;
+  width: fit-content;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: var(--trans);
+  white-space: nowrap;
+  background-color: var(--primary);
+  color: white;
+}
+.button:hover {
+  border-color: var(--primary);
+  background-color: white;
+  color: var(--primary);
+}
+.button-line--white {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.button-line--white:hover {
+  background-color: white;
+  color: var(--primary);
+}
+.button-line--trans {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.button-line--trans:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.blackC {
+  color: var(--black);
+}
+.white {
+  color: white;
+}
+.primary {
+  color: var(--primary);
+}
+
+.fs14 {
+  font-size: 1.4rem;
+}
+.fs16 {
+  font-size: 1.6rem;
+}
+.fs18 {
+  font-size: 1.8rem;
+}
+.fs20 {
+  font-size: 2rem;
+}
+.fs25 {
+  font-size: 2.5rem;
+}
+.fs30 {
+  font-size: 3rem;
+}
+.fs40 {
+  font-size: 4rem;
+}
+.fs58 {
+  font-size: 5.8rem;
+}
+.fs150 {
+  font-size: 15rem;
+}
+.fs200 {
+  font-size: 20rem;
+}
+
+.light {
+  font-weight: 300;
+}
+.medium {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+.semiBold {
+  font-weight: 600;
+}
+.black {
+  font-weight: 900;
+}
+
+.ls05 {
+  letter-spacing: 0.05em;
+}
+
+.ls10 {
+  letter-spacing: 0.1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.out-offset {
+  height: var(--out-offset);
+}
+
+.offset {
+  height: var(--offset);
+}

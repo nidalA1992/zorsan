@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZED08MJJYZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZED08MJJYZ');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym'
+      );
+
+      ym(95909936, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/95909936"
+          style="position: absolute; left: -9999px"
+          alt="" /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/vars.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://api-maps.yandex.ru/v3/?apikey=f56af39f-f84a-48d9-8c81-70c730b244d6
+&lang=ru_RU"></script>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet" />
+
+    <title>ZORSAN</title>
+  </head>
+  <body>
+    <header class="container header">
+      <div class="header__container">
+        <a class="logo" href="/">ZORSAN</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item primary fs14 light ls10">
+              <a href="#benefits">Преимущества</a>
+            </li>
+            <li class="nav__item primary fs14 light ls10">
+              <a href="#gallery">Галлерея</a>
+            </li>
+            <li class="nav__item primary fs14 light ls10">
+              <a href="#architecture">Архитектура</a>
+            </li>
+            <li class="nav__item primary fs14 light ls10">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="lang-switcher">
+          <button
+            onclick="((e) => {
+						document.querySelector('.lang-switcher__menu').classList.toggle('is-Open')
+					})()"
+            class="lang-switcher__button">
+            UZ
+          </button>
+          <div class="lang-switcher__menu">
+            <a href="/ru">RU</a>
+            <a href="/">UZ</a>
+          </div>
+        </div>
+        <button
+          class="button order-button button-line--trans"
+          data-modal="open">
+          Связаться с нами
+        </button>
+        <input type="checkbox" id="burger" class="burger" />
+        <div class="burger-menu">
+          <a class="logo" href="/">ZORSAN</a>
+
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item white fs14 light ls10">
+              <a href="#benefits">Преимущества</a>
+            </li>
+            <li class="burger-menu__item white fs14 light ls10">
+              <a href="#gallery">Галлерея</a>
+            </li>
+            <li class="burger-menu__item white fs14 light ls10">
+              <a href="#architecture">Архитектура</a>
+            </li>
+            <li class="burger-menu__item white fs14 light ls10">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <div class="burger__lang-switcher">
+            <a class="is-active" href="/ru">RU</a>
+            <a href="/">UZ</a>
+          </div>
+          <button class="button order-button" data-modal="open">
+            Связаться с нами
+          </button>
+        </div>
+        <label class="burger-label" for="burger">
+          <span class="burger-icon">
+            <svg
+              width="12"
+              height="9"
+              viewBox="0 0 12 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.5 8.5C0.5 8.22386 0.723858 8 1 8H11C11.2761 8 11.5 8.22386 11.5 8.5C11.5 8.77614 11.2761 9 11 9H1C0.723858 9 0.5 8.77614 0.5 8.5Z"
+                fill="var(--primary)" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.5 4.5C0.5 4.22386 0.723858 4 1 4H11C11.2761 4 11.5 4.22386 11.5 4.5C11.5 4.77614 11.2761 5 11 5H1C0.723858 5 0.5 4.77614 0.5 4.5Z"
+                fill="var(--primary)" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.5 0.5C0.5 0.223858 0.723858 0 1 0H11C11.2761 0 11.5 0.223858 11.5 0.5C11.5 0.776142 11.2761 1 11 1H1C0.723858 1 0.5 0.776142 0.5 0.5Z"
+                fill="var(--primary)" />
+            </svg>
+          </span>
+          <span class="close">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.146447 0.853554C-0.0488156 0.658291 -0.0488156 0.341709 0.146447 0.146447C0.341709 -0.0488155 0.658292 -0.0488155 0.853554 0.146447L6 5.29289L11.1464 0.146447C11.3417 -0.0488155 11.6583 -0.0488155 11.8536 0.146447C12.0488 0.341709 12.0488 0.658291 11.8536 0.853554L6.70711 6L11.8536 11.1464C12.0488 11.3417 12.0488 11.6583 11.8536 11.8536C11.6583 12.0488 11.3417 12.0488 11.1464 11.8536L6 6.70711L0.853554 11.8536C0.658292 12.0488 0.341709 12.0488 0.146447 11.8536C-0.048815 11.6583 -0.048815 11.3417 0.146447 11.1464L5.29289 6L0.146447 0.853554Z"
+                fill="var(--primary)" />
+            </svg>
+          </span>
+        </label>
+      </div>
+    </header>
+    <main>
+      <section class="container hero">
+        <img
+          class="hero__img"
+          src="./assets/banner.jpg"
+          alt="Изображение жилого комплекса VATAN" />
+        <h1 class="primary fs150 black heading">ZORSAN</h1>
+      </section>
+
+      <section class="tab-section container">
+        <div class="tab">
+          <h3 class="fs18 medium primary">Xonadonni tanlash</h3>
+          <div class="tab__controls">
+            <input
+              checked
+              id="tab__flat1"
+              type="radio"
+              name="flat"
+              class="tab__flat tab__step" />
+            <div class="tab__flat-content tab__content">
+              <h3 class="fs18 medium primary">Kvadratsiyani tanlash</h3>
+              <div class="tab__controls">
+                <input
+                  checked
+                  id="tab__sq1"
+                  type="radio"
+                  name="sq"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/one-room/1x_36.78_11_0.png"
+                      loading="lazy" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">36,78 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">11,0 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq1"
+                  class="button button-line--trans tab__button">
+                  36,78 / 11,0
+                </label>
+
+                <input
+                  id="tab__sq2"
+                  type="radio"
+                  name="sq"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/one-room/1x_36.78_11_6.png" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">36,78 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">11,6 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq2"
+                  class="button button-line--trans tab__button">
+                  36,78 / 11,6
+                </label>
+
+                <input
+                  id="tab__sq3"
+                  type="radio"
+                  name="sq"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/one-room/1x_36.78_14_7.png" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">36,78 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">14,7 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq3"
+                  class="button button-line--trans tab__button">
+                  36,78 / 14,7
+                </label>
+
+                <input
+                  id="tab__sq4"
+                  type="radio"
+                  name="sq"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/one-room/1x_36.92_10_25.png" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">36,92 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">10,25 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq4"
+                  class="button button-line--trans tab__button">
+                  36,92 / 10,25
+                </label>
+
+                <div class="button" style="opacity: 0">q</div>
+              </div>
+            </div>
+            <label
+              for="tab__flat1"
+              class="button button-line--trans tab__button">
+              1 xonali
+            </label>
+
+            <input
+              id="tab__flat2"
+              type="radio"
+              name="flat"
+              class="tab__flat tab__step" />
+            <div class="tab__flat-content tab__content">
+              <h3 class="fs18 medium primary">Kvadratsiyani tanlash</h3>
+              <div class="tab__controls">
+                <input
+                  checked
+                  id="tab__sq1_1"
+                  type="radio"
+                  name="sq_1"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/two-room/2x_42.7_5_84.png"
+                      loading="lazy" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">42,7 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">5,84 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq1_1"
+                  class="button button-line--trans tab__button">
+                  42,7 / 5,84
+                </label>
+
+                <input
+                  id="tab__sq2_1"
+                  type="radio"
+                  name="sq_1"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/two-room/2x_49.95_11_8.png" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">49,95 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">11,8 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq2_1"
+                  class="button button-line--trans tab__button">
+                  49,95 / 11,8
+                </label>
+
+                <input
+                  id="tab__sq3_3"
+                  type="radio"
+                  name="sq_1"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/two-room/2x_54.3_16_95.png" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">54,3 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">16,95 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq3_3"
+                  class="button button-line--trans tab__button">
+                  54,3 / 16,95
+                </label>
+
+                <input
+                  id="tab__sq4_4"
+                  type="radio"
+                  name="sq_1"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/two-room/2x_60.0_16_95.png" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">60,0 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">16,95 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq4_4"
+                  class="button button-line--trans tab__button">
+                  60,0 / 16,95
+                </label>
+
+                <input
+                  id="tab__sq4_5"
+                  type="radio"
+                  name="sq_1"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/two-room/2x_63.7_15_79.png" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">63,7 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">15,79 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq4_5"
+                  class="button button-line--trans tab__button">
+                  63,7 / 15,79
+                </label>
+              </div>
+            </div>
+            <label
+              for="tab__flat2"
+              class="button button-line--trans tab__button">
+              2 xonali
+            </label>
+
+            <input
+              id="tab__flat3"
+              type="radio"
+              name="flat"
+              class="tab__flat tab__step" />
+            <div class="tab__flat-content tab__content">
+              <h3 class="fs18 medium primary">Kvadratsiyani tanlash</h3>
+              <div class="tab__controls">
+                <input
+                  checked
+                  id="tab__sq1_2"
+                  type="radio"
+                  name="sq_2"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/three-room/3x_68.4_30_8.png"
+                      loading="lazy" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">68,4 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">30,8 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq1_2"
+                  class="button button-line--trans tab__button">
+                  68,4 / 30,8
+                </label>
+
+                <input
+                  id="tab__sq2_2"
+                  type="radio"
+                  name="sq_2"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/three-room/3x_80.34_14_7.png" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">80,34 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">14,7 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq2_2"
+                  class="button button-line--trans tab__button">
+                  80,34 / 14,7
+                </label>
+                <div class="button" style="opacity: 0">q</div>
+                <div class="button" style="opacity: 0">q</div>
+                <div class="button" style="opacity: 0">q</div>
+                <div class="button" style="opacity: 0">q</div>
+              </div>
+            </div>
+            <label
+              for="tab__flat3"
+              class="button button-line--trans tab__button">
+              3 xonali
+            </label>
+
+            <input
+              id="tab__flat4"
+              type="radio"
+              name="flat"
+              class="tab__flat tab__step" />
+            <div class="tab__flat-content tab__content">
+              <h3 class="fs18 medium primary">Kvadratsiyani tanlash</h3>
+              <div class="tab__controls">
+                <input
+                  checked
+                  id="tab__sq1_3"
+                  type="radio"
+                  name="sq_3"
+                  class="tab__sq tab__step" />
+                <div class="tab__sq-content tab__content flat-card">
+                  <div class="flat-card__img-wrapper">
+                    <img
+                      class="flat-card__scheme"
+                      src="./assets/flats/five-rooms/5x_125.67_32_74.png"
+                      loading="lazy" />
+                  </div>
+                  <div class="flat-card__content">
+                    <p class="bold fs20 primary">VATAN</p>
+                    <div class="flat-card__text">
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Xonadon maydoni</span>
+                        <span class="semiBold">125,67 м/кв</span>
+                      </p>
+                      <p class="fs16 medium flat-card__text-item">
+                        <span>Terrasa</span>
+                        <span class="semiBold">32,74 м/кв</span>
+                      </p>
+                    </div>
+                    <p class="fs16 medium">Mavjud</p>
+                    <button class="button button-line" data-modal="open">
+                      Kitob
+                    </button>
+                  </div>
+                </div>
+                <label
+                  for="tab__sq1_3"
+                  class="button button-line--trans tab__button">
+                  125,67 / 32,74
+                </label>
+                <div class="button" style="opacity: 0">q</div>
+                <div class="button" style="opacity: 0">q</div>
+                <div class="button" style="opacity: 0">q</div>
+                <div class="button" style="opacity: 0">q</div>
+                <div class="button" style="opacity: 0">q</div>
+              </div>
+            </div>
+            <label
+              for="tab__flat4"
+              class="button button-line--trans tab__button">
+              5 xonali
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="container presentation">
+        <div class="presentation__content">
+          <p class="presentation__descr liht fs25 ls10 primary center">
+            Скачайте детальную презентацию проекта
+          </p>
+          <a href="./assets/pres.pdf" class="button button-line button-line">
+            Скачать
+          </a>
+        </div>
+      </section>
+
+      <section class="container places">
+        <h2 class="center white medium fs40 ls10">Места поблизости</h2>
+        <div class="places__cards full-width">
+          <div class="places-card">
+            <img
+              class="places-card__img"
+              src="./assets/places/market.jpg"
+              alt="" />
+            <div class="places-card__text-content">
+              <h3 class="white fs30 bold">Торговые точки</h3>
+              <p class="white fs18">Универсам</p>
+              <p class="white fs18">Дехкон Базар</p>
+              <p class="white fs18">Корзинка</p>
+              <p class="white fs18">Макро Маркет</p>
+            </div>
+          </div>
+          <div class="places-card">
+            <img
+              class="places-card__img"
+              src="./assets/places/education.png"
+              alt="" />
+            <div class="places-card__text-content">
+              <h3 class="white fs30 bold">Образование</h3>
+              <p class="white fs18">Детский сад</p>
+              <p class="white fs18">Школа</p>
+              <p class="white fs18">Университет</p>
+              <p class="white fs18">Частная школа</p>
+            </div>
+          </div>
+          <div class="places-card">
+            <img
+              class="places-card__img"
+              src="./assets/places/institutes.png"
+              alt="" />
+            <div class="places-card__text-content">
+              <h3 class="white fs30 bold">Учереждения</h3>
+              <p class="white fs18">Банк</p>
+              <p class="white fs18">Посольство</p>
+              <p class="white fs18">Единое окно</p>
+              <p class="white fs18">Мини банк</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container infrastructure">
+        <div class="infrastructure__content">
+          <h2 class="center white semiBold fs40">Расположение</h2>
+          <ul class="infrastructure__list">
+            <li>
+              <p class="white fs20"><span class="fs40 bold">2</span>min</p>
+              <p class="fs25 white medium">Korzinka</p>
+            </li>
+            <li>
+              <p class="white fs20"><span class="fs40 bold">8</span>min</p>
+              <p class="fs25 white medium">Masjid</p>
+            </li>
+            <li>
+              <p class="white fs20"><span class="fs40 bold">7</span>min</p>
+              <p class="fs25 white medium">Maktab</p>
+            </li>
+            <li>
+              <p class="white fs20"><span class="fs40 bold">4</span>min</p>
+              <p class="fs25 white medium">Park</p>
+            </li>
+            <li>
+              <p class="white fs20"><span class="fs40 bold">10</span>min</p>
+              <p class="fs25 white medium">Metro</p>
+            </li>
+            <li>
+              <p class="white fs20"><span class="fs40 bold">10</span>min</p>
+              <p class="fs25 white medium">Shahar markazi</p>
+            </li>
+            <li>
+              <p class="white fs20"><span class="fs40 bold">6</span>min</p>
+              <p class="fs25 white medium">Buz Bozor</p>
+            </li>
+          </ul>
+          <button
+            class="button button-line button-line--white"
+            data-modal="open">
+            Tafsilotlarni bilib oling
+          </button>
+        </div>
+        <div class="offset"></div>
+      </section>
+
+      <section class="container benefits" id="benefits">
+        <h2 class="center primary medium fs30 ls10">Преимущества</h2>
+        <div class="offset"></div>
+        <div class="benefits__slider">
+          <div class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit6.webp"
+                      data-splide-lazy="./assets/benefit6.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Basseyn
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit7.webp"
+                      data-splide-lazy="./assets/benefit7.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Besedka
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit9.webp"
+                      data-splide-lazy="./assets/benefit9.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Sport zal
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit2.webp"
+                      data-splide-lazy="./assets/benefit2.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Ibodathona
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit1.webp"
+                      data-splide-lazy="./assets/benefit1.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Avtoturargoh
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit3.webp"
+                      data-splide-lazy="./assets/benefit3.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Bolalar maydonchasi
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit4.webp"
+                      data-splide-lazy="./assets/benefit4.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Favoralar
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit5.webp"
+                      data-splide-lazy="./assets/benefit5.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Boshqaruv shirkati
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit8.webp"
+                      data-splide-lazy="./assets/benefit8.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Mexmon xona
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit10.webp"
+                      data-splide-lazy="./assets/benefit10.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Kuzatuv kameralari
+                    </h3>
+                  </article>
+                </li>
+                <li class="splide__slide">
+                  <article class="benefit__slide">
+                    <img
+                      class="benefit-slide__img"
+                      src="./assets/benefit11.webp"
+                      data-splide-lazy="./assets/benefit11.webp"
+                      alt="" />
+                    <h3 class="benefit-slide__title fs18 white semiBold center">
+                      Sport maydonchasi
+                    </h3>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container architecture" id="architecture">
+        <h2 class="center primary semiBold fs30">Arxitektura</h2>
+        <div class="offset"></div>
+        <ul class="architecture__list">
+          <li>
+            <div class="architecture__card">
+              <img src="./assets/icons/windows.svg" alt="" />
+              <div class="architecture__card-content">
+                <h3 class="white fs20 semiBold">Issiqlik izolyatsiyasi</h3>
+                <p class="white fs18">Oynalari 2 qavat steklopaket</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="architecture__card">
+              <img src="./assets/icons/wall.svg" alt="" />
+              <div class="architecture__card-content">
+                <h3 class="white fs20 semiBold">Ovoz izolyatsiyasi</h3>
+                <p class="white fs18">Gazlangan beton devorlari - 200 mm</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="architecture__card">
+              <img src="./assets/icons/escalator.svg" alt="" />
+              <div class="architecture__card-content">
+                <h3 class="white fs20 semiBold">Terrasa</h3>
+                <p class="white fs18">Devor balandligi - 120 sm</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="architecture__card">
+              <img src="./assets/icons/elevator.svg" alt="" />
+              <div class="architecture__card-content">
+                <h3 class="white fs20 semiBold">Imkoniyatlar</h3>
+                <p class="white fs18">Podyezd qismida 2 ta lift</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="architecture__card">
+              <img src="./assets/icons/eco.svg" alt="" />
+              <div class="architecture__card-content">
+                <h3 class="white fs20 semiBold">ECO</h3>
+                <p class="white fs18">5 500 m/kv yashil hudud</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="architecture__card">
+              <img src="./assets/icons/comfort.svg" alt="" />
+              <div class="architecture__card-content">
+                <h3 class="white fs20 semiBold">Komfort</h3>
+                <p class="white fs18">Shift balandligi 2,90 m</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="architecture__card">
+              <img src="./assets/icons/parking.svg" alt="" />
+              <div class="architecture__card-content">
+                <h3 class="white fs20 semiBold">Avtoturargoh</h3>
+                <p class="white fs18">
+                  Avtoturargoh yer ostida -1 va -2 qavatda joylashgan
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="out-offset"></div>
+
+      <section class="container gallery">
+        <h2 class="center primary semiBold fs40">Galereya</h2>
+        <div class="offset"></div>
+        <div id="gallery" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img7.webp"
+                  data-splide-lazy="./assets/gallery/img7.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img1.webp"
+                  data-splide-lazy="./assets/gallery/img1.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img2.webp"
+                  data-splide-lazy="./assets/gallery/img2.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img3.webp"
+                  data-splide-lazy="./assets/gallery/img3.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img4.webp"
+                  data-splide-lazy="./assets/gallery/img4.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img5.webp"
+                  data-splide-lazy="./assets/gallery/img5.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img6.webp"
+                  data-splide-lazy="./assets/gallery/img6.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img8.webp"
+                  data-splide-lazy="./assets/gallery/img8.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img9.webp"
+                  data-splide-lazy="./assets/gallery/img9.webp"
+                  alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="thumbnail-carousel" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img7.webp"
+                  data-splide-lazy="./assets/gallery/img7.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img1.webp"
+                  data-splide-lazy="./assets/gallery/img1.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img2.webp"
+                  data-splide-lazy="./assets/gallery/img2.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img3.webp"
+                  data-splide-lazy="./assets/gallery/img3.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img4.webp"
+                  data-splide-lazy="./assets/gallery/img4.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img5.webp"
+                  data-splide-lazy="./assets/gallery/img5.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img6.webp"
+                  data-splide-lazy="./assets/gallery/img6.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img8.webp"
+                  data-splide-lazy="./assets/gallery/img8.webp"
+                  alt="" />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/gallery/img9.webp"
+                  data-splide-lazy="./assets/gallery/img9.webp"
+                  alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="out-offset"></div>
+
+      <footer class="footer container" id="contacts">
+        <div class="footer-container">
+          <div class="map" id="map"></div>
+          <div class="footer__contacts">
+            <p class="fs30 semiBold white">
+              Bepul maslahat olishni xohlaysizmi?
+            </p>
+            <button
+              class="button button-line button-line--white"
+              data-modal="open">
+              So'rov qoldiring
+            </button>
+            <div class="contact__item white light fs16">
+              Telefon:
+              <a class="fs40 bold" href="tel:+998712007400">(71) 200-74-00</a>
+            </div>
+            <div class="contact__item white light fs16">
+              Manzil:
+              <address class="white fs20 semiBold">
+                Toshkent shahri, Mirzo Ulug‘bek tumani, Ravon ko‘chasi
+              </address>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal__container">
+        <script data-b24-form="inline/89/qt88n3" data-skip-moving="true">
+          (function (w, d, u) {
+            var s = d.createElement('script');
+            s.async = true;
+            s.src = u + '?' + ((Date.now() / 180000) | 0);
+            var h = d.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(s, h);
+          })(
+            window,
+            document,
+            'https://cdn-ru.bitrix24.ru/b19574664/crm/form/loader_89.js'
+          );
+        </script>
+      </div>
+      <button class="modal__close" data-modal="close">
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.146447 0.853554C-0.0488156 0.658291 -0.0488156 0.341709 0.146447 0.146447C0.341709 -0.0488155 0.658292 -0.0488155 0.853554 0.146447L6 5.29289L11.1464 0.146447C11.3417 -0.0488155 11.6583 -0.0488155 11.8536 0.146447C12.0488 0.341709 12.0488 0.658291 11.8536 0.853554L6.70711 6L11.8536 11.1464C12.0488 11.3417 12.0488 11.6583 11.8536 11.8536C11.6583 12.0488 11.3417 12.0488 11.1464 11.8536L6 6.70711L0.853554 11.8536C0.658292 12.0488 0.341709 12.0488 0.146447 11.8536C-0.048815 11.6583 -0.048815 11.3417 0.146447 11.1464L5.29289 6L0.146447 0.853554Z"
+            fill="white" />
+        </svg>
+      </button>
+    </div>
+
+    <script>
+      new Splide('.splide', {
+        lazyLoad: 'nearby',
+        perPage: 3,
+        gap: '1rem',
+        breakpoints: {
+          768: {
+            perPage: 2,
+          },
+          540: {
+            perPage: 1,
+          },
+        },
+      }).mount();
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const main = new Splide('#gallery', {
+          type: 'fade',
+          rewind: true,
+          pagination: false,
+          arrows: false,
+          breakpoints: {
+            768: {
+              pagination: true,
+              arrows: true,
+            },
+          },
+        });
+
+        const thumbnails = new Splide('#thumbnail-carousel', {
+          fixedWidth: 200,
+          gap: 5,
+          rewind: true,
+          pagination: false,
+          lazyLoad: 'sequential',
+          focus: 'center',
+          isNavigation: true,
+        }).mount();
+
+        main.sync(thumbnails);
+        main.mount();
+      });
+    </script>
+
+    <script>
+      const buttons = document.querySelectorAll('[data-modal="open"]');
+      const closeButtons = document.querySelectorAll('[data-modal="close"]');
+      const modal = document.getElementById('modal');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          modal.classList.add('modal-isOpen');
+        });
+      });
+
+      closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          modal.classList.remove('modal-isOpen');
+        });
+      });
+    </script>
+
+    <script>
+      initMap();
+
+      async function initMap() {
+        await ymaps3.ready;
+
+        const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } =
+          ymaps3;
+
+        const { YMapDefaultMarker } = await ymaps3.import(
+          '@yandex/ymaps3-markers@0.0.1'
+        );
+
+        const map = new YMap(document.getElementById('map'), {
+          location: {
+            center: [69.325739, 41.32878],
+            zoom: 10,
+          },
+        });
+
+        map.addChild(new YMapDefaultSchemeLayer());
+        map.addChild(new YMapDefaultFeaturesLayer({ zIndex: 1800 }));
+        map.addChild(
+          new YMapDefaultMarker({
+            coordinates: [69.325739, 41.32878],
+            title: 'VATAN',
+            color: 'var(--primary)',
+          })
+        );
+      }
+    </script>
+  </body>
+</html>
